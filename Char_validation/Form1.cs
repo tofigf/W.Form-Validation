@@ -66,44 +66,60 @@ namespace Char_validation
             if (password.Any(char.IsLower))
             {
                 lblLow.ForeColor = Color.Gray;
+               
             }
             else
             {
                 lblLow.ForeColor = Color.Black;
+               
             }
             if (password.Any(char.IsUpper))
             {
                 lblUpper.ForeColor = Color.Gray;
+               
             }
             else
             {
                 lblUpper.ForeColor = Color.Black;
+                
             }
             if (password.Any(char.IsNumber))
             {
                 lblNumber.ForeColor = Color.Gray;
+                
             }
             else
             {
                 lblNumber.ForeColor = Color.Black;
+               
             }
             if (password.Any(char.IsPunctuation)|| password.Any(char.IsSymbol))
             {
                 lblSpecial.ForeColor = Color.Gray;
+               
             }
             else
             {
                 lblSpecial.ForeColor = Color.Black;
+              
             }
             if (password.Length > 7)
             {
                 lblMax.ForeColor = Color.Gray;
-                btnClick.Enabled = true;
-                btnClick.BackColor = Color.LightSeaGreen;
+
             }
             else
             {
                 lblMax.ForeColor = Color.Black;
+              
+            }
+            //button enabled
+            if(password.Length >7&& password.Any(char.IsNumber)&& password.Any(char.IsLower)&& password.Any(char.IsUpper)&& password.Any(char.IsPunctuation) || password.Any(char.IsSymbol))
+            {
+                btnClick.Enabled = true;
+                btnClick.BackColor = Color.LightSeaGreen;
+            }
+            else{
                 btnClick.Enabled = false;
                 btnClick.BackColor = Color.White;
             }
