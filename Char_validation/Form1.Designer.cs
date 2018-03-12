@@ -92,7 +92,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(210, 39);
             this.txtEmail.TabIndex = 3;
-            this.txtEmail.TextChanged += new System.EventHandler(this.btnClick_Click);
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
@@ -104,7 +103,7 @@
             this.txtpass.Size = new System.Drawing.Size(210, 20);
             this.txtpass.TabIndex = 4;
             this.txtpass.UseSystemPasswordChar = true;
-            this.txtpass.TextChanged += new System.EventHandler(this.btnClick_Click);
+            this.txtpass.TextChanged += new System.EventHandler(this.txtpass_TextChanged);
             // 
             // txtName
             // 
@@ -115,7 +114,6 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(210, 38);
             this.txtName.TabIndex = 5;
-            this.txtName.TextChanged += new System.EventHandler(this.btnClick_Click);
             this.txtName.Enter += new System.EventHandler(this.txtName_Enter);
             this.txtName.Leave += new System.EventHandler(this.txtName_Leave);
             // 
@@ -249,6 +247,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

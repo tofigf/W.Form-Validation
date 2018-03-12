@@ -8,3 +8,4 @@ C:\Users\User\Desktop\C#  myCreation\Char_validation\Char_validation\obj\Debug\C
 C:\Users\User\Desktop\C#  myCreation\Char_validation\Char_validation\obj\Debug\Char_validation.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\C#  myCreation\Char_validation\Char_validation\obj\Debug\Char_validation.exe
 C:\Users\User\Desktop\C#  myCreation\Char_validation\Char_validation\obj\Debug\Char_validation.pdb
+C:\Users\User\Desktop\C#  myCreation\Char_validation\Char_validation\obj\Debug\Char_validation.Dashboard.resources
