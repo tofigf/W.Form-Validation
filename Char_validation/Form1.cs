@@ -87,7 +87,7 @@ namespace Char_validation
             {
                 lblNumber.ForeColor = Color.Black;
             }
-            if (password.Any(char.IsSymbol))
+            if (password.Any(char.IsPunctuation)|| password.Any(char.IsSymbol))
             {
                 lblSpecial.ForeColor = Color.Gray;
             }
