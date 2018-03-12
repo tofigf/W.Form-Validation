@@ -73,6 +73,16 @@ namespace Char_validation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clipart {
+            get {
+                object obj = ResourceManager.GetObject("clipart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tony {
             get {
                 object obj = ResourceManager.GetObject("tony", resourceCulture);

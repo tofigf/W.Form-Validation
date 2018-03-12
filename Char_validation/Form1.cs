@@ -20,10 +20,20 @@ namespace Char_validation
 
         private void btnClick_Click(object sender, EventArgs e)
         {
+            if(txtEmail.Text.Contains("@")&&txtName.Text!="")
+            {
                 passingText = txtName.Text;
                 Dashboard dsb = new Dashboard();
                 dsb.Show();
                 this.Hide();
+            }
+            else
+            {
+                warner war = new warner();
+                war.ShowDialog();
+
+            }
+               
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -114,7 +124,7 @@ namespace Char_validation
               
             }
             //button enabled
-            if(password.Length >7&& password.Any(char.IsNumber)&& password.Any(char.IsLower)&& password.Any(char.IsUpper)&& password.Any(char.IsPunctuation) || password.Any(char.IsSymbol))
+            if(password.Length > 7 && password.Any(char.IsNumber)&& password.Any(char.IsLower)&& password.Any(char.IsUpper)&& password.Any(char.IsPunctuation) || password.Any(char.IsSymbol))
             {
                 btnClick.Enabled = true;
                 btnClick.BackColor = Color.LightSeaGreen;
